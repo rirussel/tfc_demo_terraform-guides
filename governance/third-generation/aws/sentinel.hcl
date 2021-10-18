@@ -46,7 +46,7 @@ policy "require-vpc-and-kms-for-lambda-functions" {
 
 policy "restrict-ami-owners" {
   source = "./restrict-ami-owners.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-assumed-roles-by-workspace" {
